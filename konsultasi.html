@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroCare|Konsultasi</title>
+  <link rel="stylesheet" href="konsultasi.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
+  <header>
+    <img src="logo.png" alt="NeuroCare Logo"/>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="konsultasi.html">Konsultasi</a>
+      <a href="#">Edukasi</a>
+      <a href="#">Komunitas</a>
+      <a href="#">Emergency</a>
+        <button class="signup-btn">Sign Up</button>
+        <button class="login-btn">Log In</button>
+    </nav>
+  </header>
+
+<body>
+    <div class="container">
+        <h1>Rekomendasi Dokter</h1>
+        <p>Konsultasi online dengan dokter kami</p>
+      
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Cari nama dokter...">
+          <span class="search-icon"></span>
+        </div>
+      
+        <div class="doctor-grid" id="doctorGrid"></div>
+      </div>
+
+      <script>
+        (function(d,t) {
+          var BASE_URL="https://app.chatwoot.com";
+          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=BASE_URL+"/packs/js/sdk.js";
+          g.defer = true;
+          g.async = true;
+          s.parentNode.insertBefore(g,s);
+          g.onload=function(){
+            window.chatwootSDK.run({
+              websiteToken: 'oGkwZT9KGPvKV6kVS3GmsBSo',
+              baseUrl: BASE_URL
+            })
+          }
+        })(document,"script");
+      </script>
+      
+      
+  <script src="script.js"></script>
+</body>
+</html>

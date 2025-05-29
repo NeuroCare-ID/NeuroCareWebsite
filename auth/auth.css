@@ -1,0 +1,268 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Container */
+.modal {
+  background: white;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  padding: 0;
+  position: relative;
+  transform: translateY(-50px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay.active .modal {
+  transform: translateY(0);
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 24px 24px 0 24px;
+  position: relative;
+}
+
+.modal-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 4px;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 24px;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Input Fields */
+.form-input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #F5F5F5;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007AFF;
+  background-color: #fff;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+/* Phone Number Input Container */
+.phone-container {
+  border: 2px solid #007AFF;
+  border-radius: 8px;
+  background-color: #F5F5F5;
+  display: flex;
+  overflow: hidden;
+}
+
+.country-code {
+  background-color: #F5F5F5;
+  border: none;
+  padding: 16px 12px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  min-width: 60px;
+  text-align: center;
+  border-right: 1px solid #E5E5E5;
+}
+
+.phone-input {
+  flex: 1;
+  border: none;
+  padding: 16px 12px;
+  background-color: #F5F5F5;
+  font-size: 16px;
+  color: #000;
+}
+
+.phone-input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+/* Primary Button */
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  background-color: #1E3A8A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1E40AF;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 24px 0;
+  color: #666;
+  font-size: 14px;
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #E5E5E5;
+  z-index: 1;
+}
+
+.divider span {
+  background: white;
+  padding: 0 16px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Google Button */
+.btn-google {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #E5E5E5;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-google:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Link */
+.modal-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #666;
+}
+
+.modal-footer a {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-footer a:hover {
+  color: #007AFF;
+}
+
+/* Demo Navigation Buttons */
+.demo-nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  display: flex;
+  gap: 10px;
+}
+
+.demo-btn {
+  padding: 10px 16px;
+  background: #007AFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.demo-btn:hover {
+  background: #0056CC;
+}
+
+/* Page Title */
+.page-title {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #999;
+  font-size: 16px;
+  z-index: 999;
+}
+
+/* Hide scrollbar when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
