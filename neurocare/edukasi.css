@@ -1,0 +1,285 @@
+/* Reset CSS (Optional, but recommended for consistency) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header (Anda sudah punya, pastikan ini ada) */
+header {
+    background: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 40px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.signup-btn,
+.login-btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background: white;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+}
+
+.login-btn {
+    background: #0b3b73;
+    color: white;
+}
+
+/* Edukasi Container (Modifikasi) */
+.edukasi-container {
+    padding: 20px;
+    max-width: 1000px;
+    /* Sesuaikan lebar */
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.edukasi-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    /* Align to left */
+}
+
+/* Search Bar  */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+#articleSearch {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-icon {
+    color: #888;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Popular Articles  */
+.popular-articles {
+    margin-bottom: 30px;
+}
+
+.popular-articles h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.popular-article-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Untuk memotong gambar jika melebihi card */
+}
+
+.popular-article-card img {
+    width: 100%;
+    height: auto;
+    /* Atur tinggi auto agar proporsional */
+    display: block;
+}
+
+.popular-article-card h3 {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Recent Articles  */
+.recent-articles {
+    margin-bottom: 30px;
+}
+
+.recent-articles h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.recent-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 kolom */
+    gap: 20px;
+}
+
+.recent-article-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.recent-article-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.recent-article-card h3 {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.recent-article-card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Styling tambahan untuk kartu yang ditingkatkan */
+.enhanced-card {
+    background-color: #e6f0ff; /* Warna latar belakang biru muda */
+    border: 1px solid #b3d1ff; /* Warna border biru tipis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan yang lebih kuat */
+    transition: transform 0.2s ease-in-out; /* Efek transisi untuk hover */
+}
+
+.enhanced-card:hover {
+    transform: scale(1.02); /* Sedikit membesar saat hover */
+}
+
+/* View More Button  */
+.view-more-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    /* Warna biru */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.view-more-button:hover {
+    background-color: #0056b3;
+    /* Warna biru lebih gelap saat hover */
+}
+
+/* Footer (Anda sudah punya, pastikan ini ada)  */
+footer {
+    background: #D9E4F5;
+    padding: 20px;
+    /* Kurangi padding atas dan bawah */
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 kolom */
+    grid-template-rows: auto auto;
+    /* 2 baris */
+    gap: 15px;
+    max-width: 1000px;
+    /* Sesuaikan lebar dengan konten */
+    margin: 0 auto;
+    /* Tengah horizontal */
+}
+
+.footer-logo {
+    grid-column: 1 / 3;
+    /* Lebar 2 kolom */
+    text-align: left;
+    margin-bottom: 10px;
+    /* Spasi bawah */
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / 3;
+    /* Lebar 2 kolom */
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left h4,
+.footer-right h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-left ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-left ul li,
+.footer-right ul li {
+    margin-bottom: 5px;
+}
+
+.footer-right {
+    text-align: left;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-right ul li i {
+    margin-right: 8px;
+    color: #333;
+}
+

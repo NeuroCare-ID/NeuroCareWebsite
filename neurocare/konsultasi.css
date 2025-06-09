@@ -1,0 +1,164 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header img {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.signup-btn, .login-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: white;
+  border: 1px solid #007BFF;
+  color: #007BFF;
+}
+
+.login-btn {
+  background: #0b3b73;
+  color: white;
+}
+  
+  .container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  
+  #searchInput {
+    padding: 10px 40px 10px 16px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+  }
+  
+  .doctor-card {
+    display: flex;
+    align-items: center;
+    background: #e6eeff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .doctor-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 16px;
+  }
+  
+  .doctor-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .doctor-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .doctor-info p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .doctor-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 14px;
+    margin: 8px 0;
+    color: #555;
+  }
+  
+
+  .chat-button {
+    background-color: #ffffff;         /* Warna putih */
+    color: #000000;                    /* Teks hitam */
+    border: none;                      /* Tidak ada border */
+    padding: 12px 0;                   /* Atas-bawah 12px, kiri-kanan auto */
+    font-size: 1rem;                   /* Ukuran tulisan */
+    font-weight: 600;                  /* Bold */
+    border-radius: 999px;              /* Biar super bulat kayak di Figma */
+    width: 100%;                       /* Lebar penuh di dalam kolom kanan */
+    text-align: center;                /* Teks rata tengah */
+    margin-top: 12px;                  /* Jarak dari info dokter */
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1); /* Bayangan ringan */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .chat-button:hover {
+    background-color: #f0f0f0;         /* Efek hover */
+  }

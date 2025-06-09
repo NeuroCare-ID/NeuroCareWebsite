@@ -1,0 +1,118 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Body tengah vertikal horizontal */
+  body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  /* Pesan info / error */
+  i {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  /* Kotak form utama */
+  .container {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Judul form */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #1A457C;
+  }
+  
+  /* Form elemen */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  /* Inputan */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  /* Tombol utama */
+  button {
+    background-color: #1A457C;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #14345b;
+  }
+  
+  /* Divider teks */
+  .divider {
+    font-size: 13px;
+    color: #777;
+    margin: 15px 0 5px;
+  }
+  
+  /* Google button style */
+  .btn-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn-google:hover {
+    background-color: #eee;
+  }
+  
+  /* Footer link bawah */
+  .modal-footer {
+    font-size: 13px;
+    margin-top: 15px;
+    color: #444;
+  }
+  
+  .modal-footer a {
+    color: #1A457C;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .modal-footer a:hover {
+    text-decoration: underline;
+  }
+  
